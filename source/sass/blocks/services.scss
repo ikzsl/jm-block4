@@ -1,0 +1,26 @@
+.services {
+  margin: 0 auto;
+  max-width: 1120px;
+  font-family: $regular;
+  background-color: $background;
+  padding: 42px 33px;
+  box-sizing: border-box;
+}
+
+.services__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__headline {
+  font-family: $bold;
+  font-size: 28px;
+  line-height: 40px;
+  color: $black;
+}
+
+.services__nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
