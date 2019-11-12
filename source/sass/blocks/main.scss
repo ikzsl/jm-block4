@@ -42,7 +42,7 @@
     &:hover,
     &:focus {
       color: $gray;
-      animation: color 0.1s ease-in-out;
+      animation: color 0.1s ease-in;
     }
 
     &::before {
