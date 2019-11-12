@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var ghPages = require("gulp-gh-pages");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
@@ -81,7 +82,7 @@ gulp.task("copy", function () {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
@@ -105,3 +106,8 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+
+gulp.task('deploy', function () {
+  return gulp.src("build/**/*")
+    .pipe(ghPages())
+  });
