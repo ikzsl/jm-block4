@@ -6,27 +6,39 @@
     font-family: $medium;
     font-size: 16px;
     line-height: 24px;
-    color: $gray;
+    color: $black;
   }
 
   &__item-link {
-    padding: 8px 12px;
+    position: relative;
+    padding: 12px 12px;
     text-decoration: none;
     color: inherit;
     display: block;
-    border: 2px solid transparent;
-    border-radius: 6px;
+    border-left: 4px solid transparent;
 
     &:hover,
     &:focus {
-      background-color: white;
-      transition: background-color 0.2s ease-out;
+      color: $gray;
+      transition: color 0.2s ease-out;
     }
 
     &--active,
     &:active {
-      background-color: white;
-      border: 2px solid $cyan;
+      color: $gray;
+    }
+
+    &--active::after,
+    &:active::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 32px;
+      top: 8px;
+      left: -8px;
+      border-radius: 4px;
+
+      background-color: $green-cyan;
     }
   }
 }

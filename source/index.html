@@ -10,6 +10,36 @@
 </head>
 
 <body>
+  <div class="navbar">
+    <label class="navbar__header">
+      <label for="close-button" class="navbar__close-label"></label>
+      <input type="button" id="close-button" class="navbar__close-button">
+      <a href="#" class="navbar__logo">
+        <img src="/img/logo.png" alt="Логотип CPS">
+      </a>
+      <button class="navbar__search">Найти</button>
+
+      <nav class="navbar__nav">
+        <ul class="navbar__nav-menu nav-menu">
+          <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item-link " href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__contact">
+        <ul class="navbar__contact-actions action-menu">
+          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
+          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
+          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
+        </ul>
+      </div>
+  </div>
+
 
   <div class="services">
 
@@ -30,14 +60,15 @@
     </header>
 
     <nav class="services__nav">
-      <ul class="services__nav-menu nav-menu">
-        <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонтируемые бренды</a>
+      <ul class="services__nav-menu nav-submenu">
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link nav-submenu__item-link--active">Ремонтируемые
+            бренды</a>
         </li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Ремонтируемые устройства</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Цены на услуги</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Адреса сервисных центров</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Специальные цены</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Отзывы</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Ремонтируемые устройства</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Цены на услуги</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Адреса сервисных центров</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Специальные цены</a></li>
+        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Отзывы</a></li>
       </ul>
     </nav>
 
