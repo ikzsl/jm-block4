@@ -9,9 +9,18 @@
     text-transform: uppercase;
     cursor: pointer;
     padding: 2px;
+
+    &:focus {
+      color: $red;
+    }
   }
 }
 
-input:checked + .lang-toggle__item {
+input:checked + .lang-toggle__item,
+input:active + .lang-toggle__item {
   color: $gray;
+}
+
+input:focus + .lang-toggle__item {
+  color: $red;
 }

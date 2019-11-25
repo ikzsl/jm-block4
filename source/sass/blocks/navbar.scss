@@ -34,6 +34,18 @@
     background: $red no-repeat 50% 50%;
     border: none;
 
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 3px white, 0 0 0 5px $red;
+      transform: scale(1.1);
+      transition: box-shadow 0.2s ease-out;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
     &--search {
       background-image: url("../img/icon-search.svg");
       background-size: 20px;
@@ -119,9 +131,18 @@
   }
 
   &__contact-email {
-    color: inherit;
+    color: $black;
     font-family: inherit;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $gray;
+    }
+
+    &:active {
+      color: $red;
+    }
   }
 
   &__contact-tel {
@@ -130,6 +151,15 @@
     font-size: 24px;
     line-height: 32px;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $gray;
+    }
+
+    &:active {
+      color: $red;
+    }
   }
 
   &__lang-toggle {
