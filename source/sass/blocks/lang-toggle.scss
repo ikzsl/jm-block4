@@ -1,0 +1,17 @@
+.lang-toggle {
+  display: flex;
+  font-family: $medium;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+
+  &__item {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2px;
+  }
+}
+
+input:checked + .lang-toggle__item {
+  color: $gray;
+}

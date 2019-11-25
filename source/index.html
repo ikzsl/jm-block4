@@ -11,80 +11,54 @@
 
 <body>
   <div class="navbar">
-    <label class="navbar__header">
-      <label for="close-button" class="navbar__close-label"></label>
-      <input type="button" id="close-button" class="navbar__close-button">
-      <a href="#" class="navbar__logo">
-        <img src="img/logo.png" alt="Логотип CPS">
-      </a>
-      <button class="navbar__search">Найти</button>
+    <div class="navbar__header">
 
-      <nav class="navbar__nav">
-        <ul class="navbar__nav-menu nav-menu">
-          <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item-link " href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="navbar__contact">
-        <ul class="navbar__contact-actions action-menu">
-          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
-          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
-          <li class="navbar__contact-action"><a href="#" class="navbar__contact-action-link"></a></li>
-        </ul>
-      </div>
-  </div>
+      <button type="button" id="close-button" class="navbar__button navbar__button--close"></button>
+      <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
+      <a href="#" class="navbar__button navbar__button--search"></a>
+    </div>
 
-
-  <div class="services">
-
-    <header class="services__header">
-      <h1 class="services__headline">Услуги и сервисы</h1>
-      <ul class="services__action-menu action-menu">
-        <li class="action-menu__item  button">
-          <a class="button__link button--order" href="#" aria-label="Оставьте заявку на ремонт">
-            Оставить заявку
-          </a>
-        </li>
-        <li class="action-menu__item button ">
-          <a class="button__link button--status" href="#" aria-label="Проверьте статус ремонта">
-            Статус ремонта
-          </a>
-        </li>
-      </ul>
-    </header>
-
-    <nav class="services__nav">
-      <ul class="services__nav-menu nav-submenu">
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link nav-submenu__item-link--active">Ремонтируемые
-            бренды</a>
-        </li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Ремонтируемые устройства</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Цены на услуги</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Адреса сервисных центров</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Специальные цены</a></li>
-        <li class="nav-submenu__item"><a class="nav-submenu__item-link" href="#">Отзывы</a></li>
+    <nav class="navbar__nav">
+      <ul class="navbar__nav-menu nav-menu">
+        <li class="nav-menu__item"><a class="nav-menu__item-link nav-menu__item-link--active">Ремонт техники</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Услуги и сервисы</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Корпоративным клиентам</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Продавцам техники</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Партнерам</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Производителям</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link" href="#">Наши сервисные центры</a></li>
+        <li class="nav-menu__item"><a class="nav-menu__item-link " href="#">Контакты</a></li>
       </ul>
     </nav>
+    <footer class="navbar__footer">
 
-    <main class="services__main main">
-      <div class="main__desc">
-        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у
-          нас вы
-          можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-        <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
-          подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-          и, в свою очередь, советуют нас родным и близким.</p>
-        <a href="#" class="main__unroll">Читать далее</a>
+      <div class="navbar__contact">
+        <ul class="navbar__contact-actions">
+          <li class="navbar__contact-action">
+            <a href="#" class="navbar__button navbar__button--call" aria-label="Позвонить"></a>
+          </li>
+          <li class="navbar__contact-action">
+            <a href="#" class="navbar__button navbar__button--chat" aria-label="Написать в чат"></a>
+          </li>
+          <li class="navbar__contact-action">
+            <a href="#" class="navbar__button navbar__button--profile" aria-label="Профиль"></a>
+          </li>
+        </ul>
+        <a href="mailto:mail@cps.com" class="navbar__contact-email">mail@cps.com</a>
+        <a href="tel:+7 800 890 8900" class="navbar__contact-tel">8 800 890 8900</a>
       </div>
-      <div class="main__image"></div>
-    </main>
+      <div class="navbar__lang-toggle lang-toggle">
 
+        <input class="visually-hidden" type="radio" name="lang" id="ru" value="ru" checked>
+        <label class="lang-toggle__item" for="ru">Ru</label>
+        <input class="visually-hidden" type="radio" name="lang" id="en" value="en">
+        <label class="lang-toggle__item" for="en">En</label>
+        <input class="visually-hidden" type="radio" name="lang" id="ch" value="ch">
+        <label class="lang-toggle__item" for="ch">Ch</label>
+      </div>
+
+
+    </footer>
   </div>
 </body>
 
