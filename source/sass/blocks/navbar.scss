@@ -53,18 +53,9 @@
 
     &--close {
       position: relative;
+      cursor: pointer;
 
-      &::after {
-        position: absolute;
-        content: "";
-        left: 9px;
-        top: 19px;
-        width: 22px;
-        height: 2px;
-        background-color: #ffffff;
-        transform: rotate(45deg);
-      }
-
+      &::after,
       &::before {
         position: absolute;
         content: "";
@@ -73,6 +64,13 @@
         width: 22px;
         height: 2px;
         background-color: #ffffff;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
         transform: rotate(-45deg);
       }
     }
