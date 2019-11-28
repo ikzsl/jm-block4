@@ -3,7 +3,8 @@
   padding: 0;
 
   &__item {
-    font-family: $medium;
+    font-family: $TTLakes;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: $black;
@@ -11,16 +12,16 @@
 
   &__item-link {
     position: relative;
-    padding: 12px 12px;
+    padding: 12px 0;
     text-decoration: none;
     color: inherit;
     display: block;
-    border-left: 4px solid transparent;
+
 
     &:hover,
     &:focus {
       color: $gray;
-      transition: color 0.2s ease-out;
+      transition: color 0.3s ease-out;
     }
 
     &--active,
@@ -35,9 +36,8 @@
       width: 8px;
       height: 32px;
       top: 8px;
-      left: -8px;
+      left: -28px;
       border-radius: 4px;
-
       background-color: $green-cyan;
     }
   }

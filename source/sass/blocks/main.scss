@@ -8,8 +8,6 @@
   position: relative;
 
   &__desc {
-
-
     & p {
       color: $black;
       font-size: 14px;
@@ -17,8 +15,6 @@
       letter-spacing: 0.2px;
     }
   }
-
-
 
   &__image {
     background-image: url("../img/services-img.jpg");
@@ -35,7 +31,8 @@
     margin-left: 30px;
     position: relative;
     text-decoration: none;
-    font-family: $medium;
+    font-family: $TTLakes;
+    font-weight: 600;
     color: $black;
     font-size: 16px;
     line-height: 24px;
@@ -81,7 +78,6 @@
     justify-content: space-between;
     align-items: flex-start;
 
-
     &__desc {
       width: 490px;
       padding-right: 20px;
@@ -101,6 +97,4 @@
       align-self: flex-end;
     }
   }
-
-
 }
