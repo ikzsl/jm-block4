@@ -10,7 +10,8 @@
   box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2), -2px 0 4px rgba(69, 79, 126, 0.02);
   box-sizing: border-box;
   padding: 24px;
-  font-family: $medium;
+  font-family: $TTLakes;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: $black;
@@ -146,7 +147,8 @@
 
   &__contact-tel {
     color: inherit;
-    font-family: $bold;
+    font-family: $TTLakes;
+    font-weight: 800;
     font-size: 24px;
     line-height: 32px;
     text-decoration: none;
