@@ -10,12 +10,12 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <section class="navbar">
     <div class="navbar__header">
 
-      <button type="button" id="close-button" class="navbar__button navbar__button--close"></button>
+      <button type="button" id="close-button" class="btn btn--close"></button>
       <a class="navbar__logo"><img src="img/logo.png" alt="Логотип CPS"></a>
-      <a href="#" class="navbar__button navbar__button--search"></a>
+      <a href="#" class="btn btn--search"></a>
     </div>
 
     <nav class="navbar__nav">
@@ -35,37 +35,32 @@
       <div class="navbar__contact">
         <ul class="navbar__contact-actions">
           <li class="navbar__contact-action">
-            <a href="#" class="navbar__button navbar__button--call" aria-label="Позвонить"></a>
+            <a href="#" class="btn btn--call" aria-label="Позвонить"></a>
           </li>
           <li class="navbar__contact-action">
-            <a href="#" class="navbar__button navbar__button--chat" aria-label="Написать в чат"></a>
+            <a href="#" class="btn btn--chat" aria-label="Написать в чат"></a>
           </li>
           <li class="navbar__contact-action">
-            <a href="#" class="navbar__button navbar__button--profile" aria-label="Профиль"></a>
+            <a href="#" class="btn btn--profile" aria-label="Профиль"></a>
           </li>
         </ul>
         <a href="mailto:mail@cps.com" class="navbar__contact-email">mail@cps.com</a>
         <a href="tel:+7 800 890 8900" class="navbar__contact-tel">8 800 890 8900</a>
       </div>
-      <div class="navbar__lang-toggle lang-toggle">
-
-        <input class="visually-hidden" type="radio" name="lang" id="ru" value="ru" checked>
-        <label class="lang-toggle__item" for="ru">Ru</label>
-        <input class="visually-hidden" type="radio" name="lang" id="en" value="en">
-        <label class="lang-toggle__item" for="en">En</label>
-        <input class="visually-hidden" type="radio" name="lang" id="ch" value="ch">
-        <label class="lang-toggle__item" for="ch">Ch</label>
-      </div>
+      <ul class="navbar__lang-toggle lang-toggle">
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ru</a></li>
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">En</a></li>
+        <li class="lang-toggle__item"><a href="#" class="lang-toggle__link">Ch</a></li>
+      </ul>
 
 
     </footer>
-  </div>
+  </section>
 
-
-  <div class="services">
+  <section class="services">
 
     <header class="services__header">
-      <h1 class="services__headline">Услуги и сервисы</h1>
+      <h2 class="services__headline">Услуги и сервисы</h2>
       <ul class="services__action-menu action-menu">
         <li class="action-menu__item  button">
           <a class="button__link button--order" href="#" aria-label="Оставьте заявку на ремонт">
@@ -101,12 +96,37 @@
         <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
           подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
           и, в свою очередь, советуют нас родным и близким.</p>
-        <a href="#" class="main__unroll">Читать далее</a>
+        <button type="button" class="unroll">Читать далее</button>
       </div>
       <div class="main__image"></div>
     </main>
 
-  </div>
+  </section>
+
+
+
+
+  <section class="brands">
+    <h2 class="brands__headline">Ремонт техники различных брендов</h2>
+
+    <ul class="brands__list brands__list--rolled">
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Lenovo.png" alt="Lenovo" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Samsung.png" alt="Samsung" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Apple.png " alt="Apple" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/ViewSonic.png " alt="ViewSonic" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Bosh.png " alt="Bosh" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/HP.png " alt="HP" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Acer.png " alt="Acer" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Sony.png " alt="Sony" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Samsung.png " alt="Samsung" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Apple.png " alt="Apple" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/ViewSonic.png " alt="ViewSonic" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Lenovo.png " alt="Lenovo" class="brands__logo"></a></li>
+      <li class="brands__item"><a href="#" class="brands__link"><img src="img/Acer.png " alt="Acer" class="brands__logo"></a></li>
+    </ul>
+    <button type="button" class="unroll">Показать все</button>
+  </section>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
