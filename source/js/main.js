@@ -6,8 +6,10 @@
   let toggleList = function () {
     brandsList.classList.toggle('brands__list--rolled');
 
+    brandsUnrollButton.classList.toggle('unroll--rolled');
     if (brands.querySelector('.brands__list--rolled')) {
       brandsUnrollButton.textContent = 'Показать все';
+
     } else {
       brandsUnrollButton.textContent = 'Скрыть';
     }

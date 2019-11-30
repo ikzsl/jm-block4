@@ -13,8 +13,6 @@
 @import "blocks/brands.scss";
 @import "blocks/unroll.scss";
 
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -33,4 +31,14 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip-path: inset(100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

@@ -12,11 +12,11 @@
   letter-spacing: 0.2px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $gray;
-    animation: color 0.1s ease-in;
+    transition: color 0.2s ease-in;
   }
 
   &::before {
@@ -32,6 +32,11 @@
     transform: rotate(45deg);
   }
 
+  &--rolled::before {
+    transform: rotate(-135deg);
+    top: 6px;
+  }
+
   &::after {
     left: -20px;
     top: 8px;
@@ -43,5 +48,10 @@
     border-left: none;
     border-top: none;
     transform: rotate(45deg);
+  }
+
+  &--rolled::after {
+    transform: rotate(-135deg);
+    top: 12px;
   }
 }
