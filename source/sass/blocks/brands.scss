@@ -33,7 +33,7 @@
     margin: 0;
 
     &--rolled > .brands__item:nth-child(n + 3) {
-      visibility: collapse;
+      display: none;
     }
   }
 
@@ -99,11 +99,11 @@
 
       &--rolled > .brands__item {
         &:nth-child(n) {
-          visibility: visible;
+          display: block;
         }
 
         &:nth-child(n + 7) {
-          visibility: collapse;
+          display: none;
         }
       }
     }
@@ -124,11 +124,11 @@
 
       &--rolled > .brands__item {
         &:nth-child(n) {
-          visibility: visible;
+          display: block;
         }
 
         &:nth-child(n + 9) {
-          visibility: collapse;
+          display: none;
         }
       }
     }
