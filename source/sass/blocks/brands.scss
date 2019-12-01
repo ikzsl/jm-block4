@@ -59,6 +59,7 @@
     &::before {
       content: "";
       position: absolute;
+      top: 32px;
       right: 38px;
       width: 8px;
       height: 8px;
@@ -70,6 +71,7 @@
     &::after {
       content: "";
       position: absolute;
+      top: 16px;
       right: 20px;
       width: 40px;
       height: 40px;
